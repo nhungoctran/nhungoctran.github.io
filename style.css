@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1547093349-65cdba98369a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+  }
+  
+  .background {
+    backdrop-filter: blur(5px);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-wrapper {
+    padding-top: 5%;
+  }
+  
+  .card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 80px 30px 30px 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    backdrop-filter: blur(8px);
+  }
+  
+  .profile-half {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.322);
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom: 0;
+    transform: translate(-50%, -100%);
+    width: 160px;
+    height: 80px;
+    backdrop-filter: blur(8px);
+  }
+  
+  .profile {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* border: 5px solid white; */
+    transform: translate(-50%, -50%);
+    background-image: url(profile.PNG);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: 50%;
+  }
+  
+  #name {
+    font-weight: 700;
+    color: rgb(105, 67, 23);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #quote {
+    font-family: "Kalam", cursive;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: rgb(105, 67, 23);
+  }
+  
+  .fa-solid {
+    color: rgb(66, 14, 14);
+    font-size: 1.5em;
+  }
+  
+  p {
+    color: rgb(82, 47, 47);
+    font-style: italic;
+  }
+  
+  .social-media {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(66, 14, 14);
+    padding-top: 10px;
+  }
+  
